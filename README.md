@@ -1,12 +1,10 @@
 # Jekyll Workbook
 
-## Run the following
+## Run the following to install jekyll and gulp-cli
 ./setup.sh
 
 ## Run the following to create a jekyll site
-jekyll new my-awesome-site --blank && cd my-awesome-site
+./create.sh
 
-## Add the files in the _additional-resources directory to all jekyll projects and then run the following two commands
-npm install
-
+## Change directory to the newly create jekyll site and run the following
 gulp
