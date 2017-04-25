@@ -17,7 +17,7 @@ title: $site
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ title }}</title>
+    <title>{{ page.title }}</title>
 </head>
 <body>
     <h1>Hello from Jekyll</h1>
