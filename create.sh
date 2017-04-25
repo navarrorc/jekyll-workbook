@@ -8,6 +8,7 @@ cp -a ./_additional-resources/. ./$site/
 
 cd ./$site
 mkdir _includes
+mkdir _sass
 mkdir css
 
 cat > index.html <<DELIM
@@ -27,7 +28,7 @@ title: $site
 </html>
 DELIM
 
-cat > css/styles.scss <<DELIM
+cat > css/main.scss <<DELIM
 ---
 ---
 
