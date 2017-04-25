@@ -10,6 +10,11 @@ cp -a ./_additional-resources/. ./$site/
 cd ./$site
 mkdir _includes
 mkdir _sass
+
+mkdir _site #fixes a bug in gulpfile.js
+touch _site/fix.html
+echo "fixes a bug in gulpfile.js" >> _site/fix.html
+
 mkdir css images scripts
 
 cat >> _config.yml <<DELIM
