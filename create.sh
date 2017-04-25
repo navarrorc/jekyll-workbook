@@ -3,13 +3,20 @@
 read -p "website name? " site
 
 jekyll new $site --blank
+#jekyll new $site
 
 cp -a ./_additional-resources/. ./$site/
 
 cd ./$site
 mkdir _includes
 mkdir _sass
-mkdir css
+mkdir css images scripts
+
+cat >> _config.yml <<DELIM
+
+# Custom Excludes
+exclude: [gulpfile.js, package.json, node_modules]
+DELIM
 
 cat > index.html <<DELIM
 ---
