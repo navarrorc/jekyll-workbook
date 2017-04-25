@@ -1,0 +1,4 @@
+#Exclude
+#Exclude directories and/or files from the conversion. These exclusions are relative to the site's source directory and cannot be outside the source directory.
+exclude: [gulpfile.js, package.json, node_modules]
+
