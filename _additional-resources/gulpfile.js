@@ -14,4 +14,4 @@ gulp.task('serve', function(){
     gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['build', 'serve']);
+gulp.task('default', ['serve', 'build']);
